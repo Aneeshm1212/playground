@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+</head>
+
+<style>
+  body {
+    margin: 0;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
+
+<body>
+
+    <div id="cont1">
+      <button disabled>
+          take a snapshot</button>
+        <video ></video>
+    </div>
+
+    <div id="cont2" style="display: none;">
+      <img src="#" id="img" alt="" />
+      <div id="emotion">Emotion</div>
+      <div id="gender">Gender</div>
+    </div>  
+<div >
+
+</div>
+      <script>
+
+const vid = document.querySelector('video');
+navigator.mediaDevices.getUserMedia({video: true,audio:true}) 
+.then(stream => {
+  vid.srcObject = stream;
+})
+
+      </script>
+<script src="./face-api.min.js"></script>
+
+</body>
+</html>

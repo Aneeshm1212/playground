@@ -1,0 +1,9 @@
+<?php
+session_start();
+unset($_SESSION['vals']);
+unset($_SESSION['acid']);
+unset($_SESSION['auth']);
+session_destroy();
+header('Location:login.php');
+return;
+?>

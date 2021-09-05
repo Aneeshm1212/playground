@@ -1,0 +1,50 @@
+<h1>media</h1>
+<body>
+    <!-- <script src="https://sdk.scdn.co/spotify-player.js"></script>  -->
+    <!-- <script>
+    
+        
+          window.onSpotifyWebPlaybackSDKReady = () => {
+  const token = 'BQB9VrWXm9V1K3Dl6hTuq8dFPtZ-Gs-vX0CEx-PvY7A2abYiIclQ8hyXcGh9tfBRB3bnL_ssB5fH9eMyZODyBK_NJZHueKCzIbKrtjBC7wVMlXYpn8YYD19wwlcxbNAX9r0C61qz0gRkrktR62weBvKsaaptnadxsMQJFYaWvyXDsKGGPs4';
+  const player = new Spotify.Player({
+    name: 'Web Playback SDK Quick Start Player',
+    getOAuthToken: cb => { cb(token); }
+  });
+
+  // Error handling
+  player.addListener('initialization_error', ({ message }) => { console.error(message); });
+  player.addListener('authentication_error', ({ message }) => { console.error(message); });
+  player.addListener('account_error', ({ message }) => { console.error(message); });
+  //player.addListener('playback_error', ({ message }) => { console.error(message); });
+
+  // Playback status updates
+  player.addListener('player_state_changed', state => { console.log(state); });
+
+  // Ready
+  player.addListener('ready', ({ device_id }) => {
+    console.log('Ready with Device ID', device_id);
+  });
+
+  // Not Ready
+  player.addListener('not_ready', ({ device_id }) => {
+    console.log('Device ID has gone offline', device_id);
+  });
+
+  // Connect to the player!
+  player.connect();
+  player.setVolume(1).then(() => {
+  console.log('Volume updated!');
+})
+  player.resume('').then(() => {
+  console.log('Resumed!');
+});
+  
+};
+// player.addListener('ready', ({ device_id }) => {
+//   console.log('The Web Playback SDK is ready to play music!');
+//   console.log('Device ID', device_id);
+// })
+      
+    </script> -->
+    <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</body>
